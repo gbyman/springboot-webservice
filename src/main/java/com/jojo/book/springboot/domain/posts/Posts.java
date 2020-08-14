@@ -1,5 +1,6 @@
 package com.jojo.book.springboot.domain.posts;
 
+import com.jojo.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id // 해당 테이블의 PK필드
     @GeneratedValue(strategy = GenerationType.IDENTITY)
